@@ -1,0 +1,26 @@
+#main{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.shopForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+ #tableInput{
+    position:absolute;
+    top: 320px;
+    left: 50px;
+    
+
+}
+
+td{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+      padding-bottom: 10px;
+    font-size: 24px;
+} 

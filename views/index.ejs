@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="main" style="height: 100vh;">
+       <div id="capture">
+        <div id="tableInput">
+            <table>
+                <tr><td>Name of Shop : </td><td id="shopNamePrint"></td></tr>
+                <tr><td>Superzone/Zone : </td><td id="zoneNamePrint"></td></tr>
+                <tr><td>Name :</td> <td id="nameShopkeeperPrint"></td></tr>
+                <tr><td>CID Number :</td><td id="cidShopkeeperPrint"></td></tr>
+                <tr><td>Phone Number :</td><td id="phoneNumberPrint"></td></tr>
+                <tr><td>Date of Testing :</td><td id="dateofTestPrint"></td></tr>
+            </table>
+            
+        </div>
+        <img src="/assets/12.png" alt="" style="width: auto; height: 100vh;">
+       </div>
+
+
+       <div class="shopForm">
+           <h4>Enter Shop Detail</h4>
+                    <input type="text" placeholder="Name of the Shop" id="shopName">
+                    <input type="text" placeholder="Zone/Superzone" id="zoneName">
+                    <input type="text" placeholder="Name" id="nameShopkeeper">
+                    <input type="text" placeholder="CID" id="cidShopkeeper">
+                    <input type="text" placeholder="Phone Number" id="phoneNumber">
+                    <input type="text" placeholder="Date of Test" id="dateofTest">
+                <br>
+                <br>
+                <br>
+            <button onclick="generate()">Generate Certificate</button>
+            <a id="download" download="card.png"><button onclick="download()">Download Certificate</button></a>
+       </div>
+
+    </div>
+    <script src="/script.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+ 
+    <div id="render">
+
+    </div>
+</body>
+
+</html>
